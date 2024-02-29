@@ -1,11 +1,12 @@
-body {
-    padding-top: 56px;
+html {
+    scroll-behavior: smooth;
 }
+
 .navbar {
     box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 .footer {
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     width: 100%;
@@ -14,6 +15,10 @@ body {
     text-align: center;
     padding: 10px 0;
 }
+.text-center{
+margin-top: 60px;
+}
+
 .cover-container {
     max-width: 42em;
 }
@@ -24,21 +29,57 @@ body {
     font-weight: 300;
 }
 .card {
-    width: 390px;
-    height: 300px;
+    width: 430px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
-   
-  
-    border: 1px solid rgba(255, 255, 255, .25);
+     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  
-    backdrop-filter: blur(15px);
+   
   }
-  
+  .card:hover{
+    border:2px solid green;
+  }
+  .card-cotainer-1 {
+    margin: 100px; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card-image-1 img{
+    width: 100%;
+    padding: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: filter 0.9s ease;
+}
+.card-image-1 img:hover {
+    filter: blur(.9px); 
+    opacity: 0.9; 
+    cursor: pointer;
+}
+.lead-card-btn .btn-secondary{
+    width: 100px;
+    border-radius: 50px;
+    font-size: small;
+    
+    
+}
+.card-image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
  
-  
+  .card-content{
+    width: 600px;
+    height: auto;
+    margin-top: 30px;
+    
+    
+    
+  }
